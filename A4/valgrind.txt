@@ -1,0 +1,1061 @@
+==4034225== Memcheck, a memory error detector
+==4034225== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4034225== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==4034225== Command: Linkey.exe
+==4034225== Parent PID: 4028804
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def5a8 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BCBD: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BDF3: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def5a0 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BCBD: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BBE2: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def600 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 4
+==4034225==    at 0x10B12C: Node::getData() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BFE5: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def600 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 4
+==4034225==    at 0x10B12C: Node::getData() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C023: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B2C4: LinkedNode::getPrevLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C008: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def110 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B2E2: LinkedNode::setPrevLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BADB: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def610 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def600 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBD5: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B266: LinkedNode::getNextLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BFCA: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def6c8 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B2C4: LinkedNode::getPrevLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB46: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def670 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B2C4: LinkedNode::getPrevLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB5D: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def670 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B284: LinkedNode::setNextLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB6F: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def6c8 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B2E2: LinkedNode::setPrevLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB95: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def670 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def668 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def668 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def600 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def660 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B266: LinkedNode::getNextLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BD53: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def668 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B2E2: LinkedNode::setPrevLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BD65: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def610 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B266: LinkedNode::getNextLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BD75: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def668 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B284: LinkedNode::setNextLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BD93: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def668 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDB7: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDB7: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDB7: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDB7: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDB7: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def600 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def788 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BDC4: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def608 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def100 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def600 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B284: LinkedNode::setNextLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BCEC: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def108 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B1F9: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BECD: DoublyLinkedList::append(int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A863: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BBA6: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def788 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BDC4: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDB7: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def7e8 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BDC4: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B1EC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BDE6: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def7e8 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BDC4: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 4
+==4034225==    at 0x10B12C: Node::getData() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BE52: DoublyLinkedList::printList(std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A96B: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def6c0 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B266: LinkedNode::getNextLinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BE68: DoublyLinkedList::printList(std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A96B: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def6c8 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10B406: LinkedList::~LinkedList() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10ADCD: DoublyLinkedList::~DoublyLinkedList() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10AA6B: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def848 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BD45: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10B413: LinkedList::~LinkedList() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10ADCD: DoublyLinkedList::~DoublyLinkedList() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10AA6B: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4def840 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BD45: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BC31: DoublyLinkedList::insertAfterLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C11A: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B284: LinkedNode::setNextLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BAEE: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4dfaf48 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BAB1: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid write of size 8
+==4034225==    at 0x10B2E2: LinkedNode::setPrevLinkedNode(LinkedNode*) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB12: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4dfaf50 is 16 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BAB1: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1CF: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4dfaf48 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BAB1: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid read of size 8
+==4034225==    at 0x10B1DC: LinkedNode::~LinkedNode() (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10BB27: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4dfaf48 is 8 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BAB1: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== Invalid free() / delete / delete[] / realloc()
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BB34: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Address 0x4dfaf40 is 0 bytes inside a block of size 24 free'd
+==4034225==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==4034225==    by 0x10BAB1: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==  Block was alloc'd at
+==4034225==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==4034225==    by 0x10BA29: DoublyLinkedList::insertBeforeLinkedNode(LinkedNode*, int) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10C102: DoublyLinkedList::optimalInsert(int, int&, std::basic_ofstream<char, std::char_traits<char> >&) (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225==    by 0x10A90D: main (in /home/nloch/CS341/A4/Linkey.exe)
+==4034225== 
+==4034225== 
+==4034225== HEAP SUMMARY:
+==4034225==     in use at exit: 6,912 bytes in 288 blocks
+==4034225==   total heap usage: 457 allocs, 2,064 frees, 144,953 bytes allocated
+==4034225== 
+==4034225== LEAK SUMMARY:
+==4034225==    definitely lost: 48 bytes in 2 blocks
+==4034225==    indirectly lost: 6,864 bytes in 286 blocks
+==4034225==      possibly lost: 0 bytes in 0 blocks
+==4034225==    still reachable: 0 bytes in 0 blocks
+==4034225==         suppressed: 0 bytes in 0 blocks
+==4034225== Rerun with --leak-check=full to see details of leaked memory
+==4034225== 
+==4034225== For lists of detected and suppressed errors, rerun with: -s
+==4034225== ERROR SUMMARY: 6697 errors from 62 contexts (suppressed: 0 from 0)
