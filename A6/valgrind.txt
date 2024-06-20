@@ -1,0 +1,40 @@
+==3292736== Memcheck, a memory error detector
+==3292736== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3292736== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==3292736== Command: Hash.exe
+==3292736== Parent PID: 2302179
+==3292736== 
+==3292736== Invalid read of size 8
+==3292736==    at 0x10DA0A: LinkedNode::getNextLinkedNode() (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10B68E: DoublyLinkedList::removeLinkedNode(int) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10C502: HashTableChaining::remove(int) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10A83C: userInput(HashTable*) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10AB13: main (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==  Address 0x4ded8c0 is 16 bytes inside a block of size 32 free'd
+==3292736==    at 0x484BB6F: operator delete(void*, unsigned long) (vg_replace_malloc.c:935)
+==3292736==    by 0x10B682: DoublyLinkedList::removeLinkedNode(int) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10C502: HashTableChaining::remove(int) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10A83C: userInput(HashTable*) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10AB13: main (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==  Block was alloc'd at
+==3292736==    at 0x4849013: operator new(unsigned long) (vg_replace_malloc.c:422)
+==3292736==    by 0x10B117: DoublyLinkedList::append(HashEntry) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10C362: HashTableChaining::insert(int, int) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10A621: fromFile(HashTable*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/nloch/CS341/A6/Hash.exe)
+==3292736==    by 0x10AAAA: main (in /home/nloch/CS341/A6/Hash.exe)
+==3292736== 
+==3292736== 
+==3292736== HEAP SUMMARY:
+==3292736==     in use at exit: 32 bytes in 1 blocks
+==3292736==   total heap usage: 39 allocs, 38 frees, 127,944 bytes allocated
+==3292736== 
+==3292736== LEAK SUMMARY:
+==3292736==    definitely lost: 32 bytes in 1 blocks
+==3292736==    indirectly lost: 0 bytes in 0 blocks
+==3292736==      possibly lost: 0 bytes in 0 blocks
+==3292736==    still reachable: 0 bytes in 0 blocks
+==3292736==         suppressed: 0 bytes in 0 blocks
+==3292736== Rerun with --leak-check=full to see details of leaked memory
+==3292736== 
+==3292736== For lists of detected and suppressed errors, rerun with: -s
+==3292736== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
