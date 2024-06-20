@@ -1,0 +1,25 @@
+==4138217== Memcheck, a memory error detector
+==4138217== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4138217== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==4138217== Command: Bit.exe
+==4138217== Parent PID: 4078833
+==4138217== 
+==4138217== Invalid write of size 1
+==4138217==    at 0x1097B9: BitArray::initialize(char const*, int) (in /home/nloch/CS341/A3/Bit.exe)
+==4138217==    by 0x10A402: Dictionary::initialize(char*, int) (in /home/nloch/CS341/A3/Bit.exe)
+==4138217==    by 0x109438: main (in /home/nloch/CS341/A3/Bit.exe)
+==4138217==  Address 0x4de1c80 is 0 bytes after a block of size 0 alloc'd
+==4138217==    at 0x484A2F3: operator new[](unsigned long) (vg_replace_malloc.c:640)
+==4138217==    by 0x109681: BitArray::BitArray(int) (in /home/nloch/CS341/A3/Bit.exe)
+==4138217==    by 0x10A231: Dictionary::Dictionary() (in /home/nloch/CS341/A3/Bit.exe)
+==4138217==    by 0x109416: main (in /home/nloch/CS341/A3/Bit.exe)
+==4138217== 
+==4138217== 
+==4138217== HEAP SUMMARY:
+==4138217==     in use at exit: 0 bytes in 0 blocks
+==4138217==   total heap usage: 6 allocs, 6 frees, 83,416 bytes allocated
+==4138217== 
+==4138217== All heap blocks were freed -- no leaks are possible
+==4138217== 
+==4138217== For lists of detected and suppressed errors, rerun with: -s
+==4138217== ERROR SUMMARY: 4 errors from 1 contexts (suppressed: 0 from 0)
